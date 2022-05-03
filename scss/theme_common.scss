@@ -14,7 +14,7 @@
 @import '_counter';
 @import '_media';
 @import '_toc';
-// @import '_footnote';
+@import '__colophon';
 
 /* and more... 🖋 */
 
@@ -31,6 +31,14 @@ span.author {
   display: block;
   text-align: right;
 }
+
+/*
+p {
+  text-indent: 1em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+*/
 
 // トンボをつける
 /*

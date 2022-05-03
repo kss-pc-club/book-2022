@@ -6,14 +6,13 @@ module.exports = {
   theme: 'css/theme_print.css',
   entryContext: './manuscripts',
   entry: [
-    { rel: 'contents' },
+    'index.md',
     'foreword.md',
+    'colophon.md',
   ],
   output: [
     './public/book.pdf',
   ],
-  toc: true,
-  tocTitle: '目次',
   workspaceDir: '.cache',
   // cover: './cover.png', // cover image. default to undefined.
   // vfm: { // options of VFM processor
