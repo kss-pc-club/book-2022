@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "build": "vivliostyle build",
+    "build": "run-s build:scss build:vivliostyle",
     "build:scss": "sass scss:css",
     "build:vivliostyle": "vivliostyle build",
     "press-ready": "vivliostyle build && press-ready build -i public/book.pdf -o public/press-ready.pdf --gray-scale",
