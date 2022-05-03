@@ -8,7 +8,6 @@ module.exports = {
   entry: [
     { rel: 'contents' },
     'foreword.md',
-    'sample/index.md',
   ],
   output: [
     './public/output.pdf',
