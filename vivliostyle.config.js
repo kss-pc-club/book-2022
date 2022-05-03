@@ -10,7 +10,7 @@ module.exports = {
     'foreword.md',
   ],
   output: [
-    './public/output.pdf',
+    './public/book.pdf',
   ],
   toc: true,
   tocTitle: '目次',
