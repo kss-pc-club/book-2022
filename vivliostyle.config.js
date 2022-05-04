@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'book-2022',
+  title: 'KSS PC Book 2022',
   author: 'kss-pc-club',
   language: 'ja',
   size: 'JIS-B5',
