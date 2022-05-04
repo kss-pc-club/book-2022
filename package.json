@@ -10,7 +10,7 @@
     "build:scss": "sass scss:css",
     "build:vivliostyle": "vivliostyle build",
     "press-ready": "vivliostyle build && press-ready build -i public/book.pdf -o public/press-ready.pdf --gray-scale",
-    "dev": "run-p preview watch:scss",
+    "start": "run-p preview watch:scss",
     "preview": "vivliostyle preview",
     "watch:scss": "sass --watch scss:css"
   },
