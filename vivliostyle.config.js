@@ -8,6 +8,7 @@ module.exports = {
   entry: [
     'index.md',
     'foreword.md',
+    'about-vivliostyle/index.md',
     'colophon.md',
   ],
   output: [
