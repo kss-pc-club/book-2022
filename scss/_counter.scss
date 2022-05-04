@@ -47,12 +47,12 @@ section {
   }
 }
 
-figure.fig {
+figure:not([class*='language-']) {
   counter-increment: fig;
   figcaption::before {
     content: 'Fig. ' counter(fig) ': ';
     :root:lang(ja) & {
-      content: '図' counter(fig) ': ';
+      content: '▲ 図' counter(fig) ': ';
     }
   }
 }
