@@ -1,4 +1,4 @@
-<div class="hoge">
+<div class="front">
 
 # KSS PC BOOK 2022
 
