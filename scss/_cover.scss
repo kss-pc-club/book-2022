@@ -1,0 +1,21 @@
+@page:first {
+  @top-left-corner {
+    content: none;
+  }
+  @top-center {
+    content: none;
+  }
+  @top-right-corner {
+    content: none;
+  }
+  @bottom-left-corner {
+    content: none;
+  }
+  @bottom-center {
+    content: none;
+  }
+
+  .hoge {
+    text-align: center;
+  }
+}
