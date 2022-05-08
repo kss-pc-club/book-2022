@@ -7,7 +7,7 @@ author: 張替健太/hnm876_md
 
 <span class="author">張替健太/hnm876_md</span>
 
-## 初めに
+## はじめに
 
 こんにちは。古河中等教育学校６期生の張替健太です。
 僕の記事の前に書かれた小難しそうな記事を見て、
@@ -25,11 +25,13 @@ author: 張替健太/hnm876_md
 
 ## [ワンクリック詐欺サイト解説]支払い期限タイマー
 
+![ハッタリタイマー](./%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202022-05-08%2018.15.20.png)
+
 こんな感じでクリックした人を焦らせて個人情報入力させようという魂胆です。
 冷静に見てみるとおもちゃのような仕組みです。
 
-HTML
-```
+
+```html:index.html
 <div>
     <p><span id="hour"></span>hours</p>
     <p><span id="min"></span>minutes</p>
@@ -37,8 +39,7 @@ HTML
 </div>
 ```
 
-JavaScript
-```
+```js:timer.js
 const hour = document.getElementById("hour");
 const min = document.getElementById("min");
 const sec = document.getElementById("sec");
@@ -62,7 +63,7 @@ countdown();
 setInterval(countdown,1000);
 ```
 
-1.HTMLのhour,min,secをjsで取得する 
+1.HTMLで書かれたファイルのhour,min,secをJavaScriptという言語で取得する 
 2.現在の時刻と明日の0時を取得して差分を出して取得する
 3.modの考え方を利用して時間、分、秒を算出する
 4.見やすく二桁表示にして、カウントダウンする
@@ -75,7 +76,7 @@ setInterval(countdown,1000);
 端末情報やブラウザのバージョンなんかは開示されているので、
 誰でも簡単に抜き取ることができます。
 
-```
+```js:kowakunaiyo~.js
 <script src="platform.js"></script>
     <script>
       document.write(platform.name); //Firefox
@@ -84,7 +85,9 @@ setInterval(countdown,1000);
       document.write(platform.layout); //Gecko
     </script>
 ```
-上部は使用例。
+上部は使用例。ちなみにこんな感じに抜き取ることができます。
+
+![抜き取り使用例](./%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202022-05-08%2018.22.28.png){width=250}
 
 ```
 // on IE10 x86 platform preview running in IE7 compatibility mode on Windows 7 64 bit edition
@@ -118,11 +121,14 @@ info.description; // 'Opera 11.52 (identifying as Firefox 4.0) on Mac OS X 10.7.
 
 謎のシャッター音と点滅で「もしかして写真を撮られたのかも」と
 思うかもしれませんがそんなことありません。演出です。
-今ではWebポリシー改定によってシャッター音を急に鳴らすことはかなり難しくなっています。
-できないことはありませんが、実装するためのSPA開発者・経験者が少ないこともあり
-解剖はせず、点滅の方の解剖をしていこうと思います。
 
-```
+![パシャ](./%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202022-05-08%2018.24.40.png)
+
+今ではWebポリシー改定によってシャッター音を急に鳴らすことはかなり難しくなっています。
+できないことはありませんが、実装するためのSPA(シングルページアプリケーション)開発者・経験者が少ないこともあり
+こちらの解剖はせず、点滅の方の解剖をしていこうと思います。
+
+```html:camera.html
 <div class="camera">
     <img src="https://media.discordapp.net/attachments/757627473427955867/972334826436829184/7.png">
 </div>
@@ -151,12 +157,11 @@ info.description; // 'Opera 11.52 (identifying as Firefox 4.0) on Mac OS X 10.7.
 
 カメラのイラストが点滅して少し怖くなると言ったハッタリですね。
 これはcssアニメーションというものを使っています。
-カメラの画像の透過率を100%→0%→100%と変化させて、
-flashというアニメーションを作っています。
-後は上手に点滅しているように見せるために点滅しているように見せるために
-1.0秒後に0.3秒間等しい速度でflashを使うとカメラのイラストに指定すれば完成です。
+カメラの画像の透過率を100%→0%→100%と変化させて、flashというアニメーションを作っています。
+後は上手に点滅しているように見せるために
+1.0秒後に0.3秒間等しい速度でflashを使えとカメラのイラストに指定すれば完成です。
 
-## 終わりに
+## おわりに
 
 いかがでしたか、よければ今後の糧にでもしていただけると幸いです。
 近年、情報分野の発達は目覚ましいので、こんなものより
@@ -165,9 +170,10 @@ flashというアニメーションを作っています。
 
 ### 参考、参照
 
-https://www.webdlab.com/jquery/jquery-new-date/
-https://tcd-theme.com/2021/08/javascript-countdowntimer.html
-https://qiita.com/TD12734/items/671064e8fce75faea98d
-https://teratail.com/questions/265276
-http://kentaro-shimizu.com/lecture/fraud/pay.html
-https://coco-factory.jp/ugokuweb/
+- https://www.webdlab.com/jquery/jquery-new-date/
+- https://tcd-theme.com/2021/08/javascript-countdowntimer.html
+- https://qiita.com/TD12734/items/671064e8fce75faea98d
+- https://teratail.com/questions/265276
+- http://kentaro-shimizu.com/lecture/fraud/pay.html
+- https://coco-factory.jp/ugokuweb/
+- https://deadlinetimer.com/
