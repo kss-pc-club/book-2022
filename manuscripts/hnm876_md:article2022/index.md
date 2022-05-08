@@ -87,7 +87,7 @@ setInterval(countdown,1000);
 ```
 上部は使用例。ちなみにこんな感じに抜き取ることができます。
 
-![抜き取り使用例](./%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202022-05-08%2018.22.28.png){width=250}
+![抜き取り使用例](./%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202022-05-08%2018.22.28.png)
 
 ```
 // on IE10 x86 platform preview running in IE7 compatibility mode on Windows 7 64 bit edition
@@ -115,7 +115,7 @@ info.os; // 'Mac OS X 10.7.2'
 info.description; // 'Opera 11.52 (identifying as Firefox 4.0) on Mac OS X 10.7.2'
 ```
 上部は抜き取れる情報と抜き取り方みたいな。
-このようにたくさんの情報が抜き取れる誰でも使えるライブラリ（https://github.com/bestiejs/platform.js）というものがあるのでハッキングとかではないんだなと思っておくと気が楽です。
+このようにたくさんの情報が抜き取れる誰でも使えるライブラリ（https://github.com/bestiejs/platform.js） というものがあるのでハッキングとかではないんだなと思っておくと気が楽です。
 
 ## [ワンクリック詐欺サイト解説]写真を撮られる（？）
 
