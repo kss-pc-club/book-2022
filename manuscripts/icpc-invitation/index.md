@@ -146,5 +146,69 @@ int main() {
 
 本当は2021年度の問題を載せようと思ったのですが、まだ公開されていませんでした...。何かの体積を計算させる問題だったと記憶しています。
 
-to do
+そこで、2020年度の問題を載せます！<span class="footnote">https://icpc.iisf.or.jp/past-icpc/regional2020/problems-2020.pdf すべて英語です。本番では、機械翻訳は許されません（辞書はOK）。</span>
 
+> $N \times N \times N$ の立方体に収まるある立体を、 $x-y$, $y-z$, $z-x$ 平面それぞれに射影した図が与えられます。
+> 与えられた図に適する図形が存在するか判定してください。
+>
+> 制約: $1 \le N \le 100$
+
+解法は、 $N \times N \times N$ すべてが埋まった立方体から、「削って」いき、最終的に出来上がった立体が、条件が満たしているかを確認する方法です。
+
+アジア大会では、自分のコンピュータではなく、ジャッジ用コンピュータで正誤判定されるため、時間制限が定められています。
+この問題では2秒ですが、以上の解法は $O(N^3)$ なので、ACになります。
+
+実装は大変ですが、これも問題なく解けると思います。
+
+```cpp:ans.cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define rep(i, n) for (int i = 0; i < (n); ++i)
+
+int main() {
+  int n;
+  cin >> n;
+  vector yz(n, vector<bool>(n)), zx(n, vector<bool>(n)), xy(n, vector<bool>(n));
+  rep(i, n) {
+    string s; cin >> s;
+    rep(j, n) yz[j][n - i - 1] = (s[j] == '1');
+  }
+  rep(i, n) {
+    string s; cin >> s;
+    rep(j, n) zx[j][n - i - 1] = (s[j] == '1');
+  }
+  rep(i, n) {
+    string s; cin >> s;
+    rep(j, n) xy[j][n - i - 1] = (s[j] == '1');
+  }
+
+  vector ans(n, vector(n, vector<bool>(n, true)));
+  rep(i, n) rep(j, n) if (!yz[i][j]) rep(k, n) ans[k][i][j] = false;
+  rep(i, n) rep(j, n) if (!zx[i][j]) rep(k, n) ans[j][k][i] = false;
+  rep(i, n) rep(j, n) if (!xy[i][j]) rep(k, n) ans[i][j][k] = false;
+
+  rep(i, n) rep(j, n) {
+    if (yz[i][j]) {
+      bool chk = false;
+      rep(k, n) if (ans[k][i][j]) chk = true;
+      if (!chk) { puts("No"); return 0; }
+    }
+  }
+  rep(i, n) rep(j, n) {
+    if (zx[i][j]) {
+      bool chk = false;
+      rep(k, n) if (ans[j][k][i]) chk = true;
+      if (!chk) { puts("No"); return 0; }
+    }
+  }
+  rep(i, n) rep(j, n) {
+    if (xy[i][j]) {
+      bool chk = false;
+      rep(k, n) if (ans[i][j][k]) chk = true;
+      if (!chk) { puts("No"); return 0; }
+    }
+  }
+  puts("Yes");
+  return 0;
+}
+```
