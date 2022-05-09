@@ -121,3 +121,8 @@ pre[class*='language-'] {
 .token.entity {
   cursor: help;
 }
+
+code[class*='language-'],
+pre[class*='language-'] {
+  white-space: pre-wrap !important;
+}
