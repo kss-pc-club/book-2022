@@ -13,5 +13,6 @@
 
 - [はじめに](foreword.html)
 - [この部誌を支える技術](about-vivliostyle/index.html)
+- [ICPCへのお誘い](icpc-invitation/index.html)
 
 </nav>
