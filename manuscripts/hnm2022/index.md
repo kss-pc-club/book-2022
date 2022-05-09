@@ -169,7 +169,7 @@ info.description; // 'Opera 11.52 (identifying as Firefox 4.0) on Mac OS X 10.7.
 より高度な技術でみなさんを騙す人が出てくることは必至でしょう。
 そのためにもぜひ自ら情報の力をつけてみてはいかがでしょうか。
 
-### 参考、参照
+## 参考・参照
 
 - https://www.webdlab.com/jquery/jquery-new-date/
 - https://tcd-theme.com/2021/08/javascript-countdowntimer.html
