@@ -14,5 +14,6 @@
 - [はじめに](foreword.html)
 - [この部誌を支える技術](about-vivliostyle/index.html)
 - [ICPCへのお誘い](icpc-invitation/index.html)
+- [ワンクリック詐欺サイト解剖してみた](hnm2022/index.html)
 
 </nav>

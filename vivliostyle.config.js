@@ -10,6 +10,7 @@ module.exports = {
     'foreword.md',
     'about-vivliostyle/index.md',
     "icpc-invitation/index.md",
+    'hnm2022/index.md',
     'colophon.md',
   ],
   output: [
