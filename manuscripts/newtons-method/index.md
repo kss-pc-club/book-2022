@@ -372,7 +372,7 @@ int main() {　
 > 
 > $$\lim_{n \to \infty} x_{n+1} = \lim_{n \to \infty}(x_n - \frac{f( x_n)}{f'( x_n)})$$
 > 
-> ここで $\lim_{n \to \infty}x_n = \beta, \lim{n \to \infty}x_{n+1} = \beta$ であるから
+> ここで $\lim_{n \to \infty}x_n = \beta, \lim_{n \to \infty}x_{n+1} = \beta$ であるから
 > $$\beta = \beta - \frac{f(\beta)}{f'(\beta)}$$
 > 
 > これより $f(\beta) = 0$
