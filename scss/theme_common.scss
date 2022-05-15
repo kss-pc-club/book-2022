@@ -37,10 +37,24 @@ p {
   margin-block-end: 0em;
 }
 
+blockquote p {
+  text-indent: 0em;
+}
+
 // トンボをつける
 /*
 @page {
   marks: crop cross;
   bleed: 3mm; // 塗り足し
+}
+*/
+
+/*
+span.footnote {
+  margin-left: 12px;
+  text-indent: 0;
+  > span {
+    position: absolute !important;
+  }
 }
 */

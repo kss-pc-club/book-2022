@@ -11,6 +11,7 @@ module.exports = {
     'about-vivliostyle/index.md',
     "icpc-invitation/index.md",
     'hnm2022/index.md',
+    'newtons-method/index.md',
     'colophon.md',
   ],
   output: [
