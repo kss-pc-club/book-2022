@@ -1,5 +1,6 @@
 :root {
-  font-family: $font-family;
+  // font-family: $font-serif;
+  font-family: $font-sans-serif;
   font-weight: 400;
   line-height: 1.7;
 }
@@ -8,6 +9,7 @@ h1,
 h2,
 h3 {
   font-feature-settings: 'palt', 'calt';
+  font-family: $font-sans-serif;
 }
 
 h1 {
@@ -24,6 +26,10 @@ h2 {
 h3 {
   font-size: 1.4rem;
   line-height: 1.2;
+}
+
+strong {
+  font-family: $font-sans-serif;
 }
 
 a {
@@ -67,6 +73,7 @@ figure {
     width: 90%;
     font-size: 90%;
     break-inside: avoid;
+    font-family: $font-sans-serif;
   }
   img[src$='.png'],
   img[src$='.jpg'],
