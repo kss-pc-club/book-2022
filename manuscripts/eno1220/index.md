@@ -11,7 +11,7 @@ author: eno1220
 
 こんにちは。6 期生の榎本です。パソコン部では、主に競技プログラミングをしたり、低レイヤーの勉強をしたりして遊んでいます。
 
-さて、今回は wikipedia を眺めていて発見した「Zig」<span class="footnote"> https://ziglang.org </span> と呼ばれるプログラミング言語を紹介したいと思います。
+さて、今回は Wikipedia を眺めていて発見した「Zig」<span class="footnote"> https://ziglang.org </span> と呼ばれるプログラミング言語を紹介したいと思います。
 
 ## Zig is 何？
 
@@ -22,18 +22,19 @@ Zig は、堅牢で最適かつ再利用可能なソフトウェアを維持す�
 > Zig is a general-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
 
 具体的には、メモリ不足などのエッジケースでも正確に動作し、プログラムが最適に動作/実行できるように記述され、同一コードが異なる多くの環境で動作するとされています。<span class="footnote">https://ziglang.org/documentation/0.9.1/#toc-Introduction</span>
+
 ![ロゴ](zig-logo-dark.svg){width=250}
 
 ## Zig を使うには？
 
 Zig コンパイラは、公式サイト<span class="footnote">https://ziglang.org/download</span>で配布されているバイナリをダウンロードし、パスを通すか、パッケージマネージャを通じてインストールをすることができます。一部パッケージマネージャは過去のバージョンのみ対応しているものがあるので、注意が必要であるほか、最新版(master version)にはバグが含まれている場合があります。
 
-```zsh
-$export PATH=$PATH:~/Zig #ダウンロード後にパスを通す
-$brew install zig #もしくはhomebrewなどのパッケージマネージャを使用する
+```bash
+$ export PATH=$PATH:~/Zig #ダウンロード後にパスを通す
+$ brew install zig #もしくはhomebrewなどのパッケージマネージャを使用する
 ```
 
-vim や vscode 用拡張機能や LSP も存在するので、GitHub やそれぞれのエディタのリポジトリなどを確認すると良いでしょう。
+Vim や Vscode 用拡張機能や LSP も存在するので、GitHub やそれぞれのエディタのリポジトリなどを確認すると良いでしょう。
 
 #### これ以降の解説は 2022 年 5 月 17 日時点の公式ドキュメントや最新の安定版である Zig version0.9.1 をもとにしています。Zig はメジャーリリースに達しておらず、今後仕様変更の可能性があります。
 
@@ -63,8 +64,8 @@ pub fn main() void{
 }
 ```
 
-```shell
-$zig run sample.zig
+```bash
+$ zig run sample.zig
 Hello,World! #出力結果
 ```
 
@@ -114,8 +115,8 @@ pub fn main() void {
 }
 ```
 
-```shell
-$zig run sample.zig
+```bash
+$ zig run sample.zig
 55 314159 -11 #出力結果
 ```
 
@@ -173,7 +174,7 @@ pub fn main() void {
 }
 ```
 
-```shell
+```bash
 $ zig run sample.zig
 First: 1, Fourth: 3, Length: 8
 KOGA: 2012, WA: 202202202 #出力結果
@@ -214,8 +215,8 @@ pub fn main() void{
 }
 ```
 
-```shell
-$zig run smaple.zig
+```bash
+$ zig run smaple.zig
 ./sample.zig:4:8 error: expected type 'bool', found 'comptime_int' #出力結果
 ```
 
@@ -261,8 +262,8 @@ while(i<10):(i+=3){
 
 ```
 
-```shell
-$zig run sample.zig
+```bash
+$ zig run sample.zig
 1 4 7
 1 4 7
 ```
@@ -293,8 +294,8 @@ for(array)|character,index|{
 }
 ```
 
-```shell
-$zig run sample.zig
+```bash
+$ zig run sample.zig
 k s s
 no0 is k
 no1 is s
@@ -323,8 +324,8 @@ pub fn main() void{
 }
 ```
 
-```shell
-$zig run sample.zig
+```bash
+$ zig run sample.zig
 1100 800 500 #出力結果
 ```
 
