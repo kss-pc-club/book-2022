@@ -12,12 +12,12 @@
 # 目次 {.doc}
 
 - [はじめに](foreword.html)
-- [この部誌を支える技術](about-vivliostyle/index.html)
-- [ICPCへのお誘い](icpc-invitation/index.html)
-- [ワンクリック詐欺サイト解剖してみた](hnm2022/index.html)
-- [ニュートン法で近似をしよう！！](newtons-method/index.html)
-- [キーボードが欲しかったので自作してみた](keyboard/index.html)
-- [プログラミング言語 Zig の基本文法](eno1220/index.html)
-- [始めよう、Arch Linux](an_introduction_to_archlinux/index.html)
+- [第 1 章 この部誌を支える技術](about-vivliostyle/index.html)
+- [第 2 章 ICPCへのお誘い](icpc-invitation/index.html)
+- [第 3 章 ワンクリック詐欺サイト解剖してみた](hnm2022/index.html)
+- [第 4 章 ニュートン法で近似をしよう！！](newtons-method/index.html)
+- [第 5 章 キーボードが欲しかったので自作してみた](keyboard/index.html)
+- [第 6 章 プログラミング言語 Zig の基本文法](eno1220/index.html)
+- [第 7 章 始めよう、Arch Linux](an_introduction_to_archlinux/index.html)
 
 </nav>
