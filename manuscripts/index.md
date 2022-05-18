@@ -17,6 +17,7 @@
 - [ワンクリック詐欺サイト解剖してみた](hnm2022/index.html)
 - [ニュートン法で近似をしよう！！](newtons-method/index.html)
 - [キーボードが欲しかったので自作してみた](keyboard/index.html)
+- [プログラミング言語 Zig の基本文法](eno1220/index.html)
 - [始めよう、Arch Linux](an_introduction_to_archlinux/index.html)
 
 </nav>

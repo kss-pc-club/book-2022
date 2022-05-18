@@ -13,6 +13,7 @@ module.exports = {
     'hnm2022/index.md',
     'newtons-method/index.md',
     'keyboard/index.md',
+    'eno1220/index.md',
     'an_introduction_to_archlinux/index.md',
     'colophon.md',
   ],
