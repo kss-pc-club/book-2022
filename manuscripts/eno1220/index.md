@@ -205,6 +205,7 @@ Zig では条件式には真偽値のみを書くことができ、他の数値�
 
 ```zig
 const std = @import("std");
+
 pub fn main() void{
     const a = 1;
     if(a){
@@ -237,23 +238,24 @@ const std = @import("std");
 
 pub fn main() void{
 
-//ケース1:while(条件式){本体}
+    //ケース1:while(条件式){本体}
 
-var i:u32 = 1;
-while(i<10){
-    std.debug.print("{} ",.{i});
-    i += 3;
-}
+    var i:u32 = 1;
+    while(i<10){
+        std.debug.print("{} ",.{i});
+        i += 3;
+    }
 
-std.debug.print("{}\n",.{});
+    std.debug.print("{}\n",.{});
 
-//ケース2:while(条件式):(更新式){本体}
-//更新式は、ループの終わりに実行されます
+    //ケース2:while(条件式):(更新式){本体}
+    //更新式は、ループの終わりに実行されます
 
-var j:u32 = 1;
-while(i<10):(i+=3){
-    std.debug.print("{}",.{i});
-}
+    var j:u32 = 1;
+    while(i<10):(i+=3){
+        std.debug.print("{}",.{i});
+    }
+
 }
 
 //ケース1とケース2は同じ結果を出力する
@@ -275,19 +277,20 @@ for ループは配列に対して反復処理をするために使用されま�
 
 ```zig
 const std = @import("std");
+
 pub fn main() void{
 
-const array = [_]u8{'k','s','s'};
+    const array = [_]u8{'k','s','s'};
 
-for(array)|character|{
-    std.debug.print("{u} ",.{character});
-}
+    for(array)|character|{
+        std.debug.print("{u} ",.{character});
+    }
 
-//forループでは配列のindexを持つこともできる
+    //forループでは配列のindexを持つこともできる
 
-for(array)|character,index|{
-    std.debug.print("no{d} is {u}",.{@intCast(u32,index),character})
-}
+    for(array)|character,index|{
+        std.debug.print("no{d} is {u}",.{@intCast(u32,index),character})
+    }
 
 }
 ```
@@ -309,6 +312,7 @@ no2 is s
 
 ```zig
 const std = @import("std");
+
 fn score(a:i32,b:i32) i32{
     return a * 10 + b * 30;
 }
