@@ -64,9 +64,9 @@ pub fn main() void{
 }
 ```
 
-```bash
+```bash:出力結果
 $ zig run sample.zig
-Hello,World! #出力結果
+Hello,World!
 ```
 
 まず、1 行目の`const std = @import("std")`では基本的な機能やアルゴリズム、データ構造などを提供する Zig Standard Library（標準ライブラリ）を組み込み関数である`@import`関数によって取り込んでいます。
@@ -115,9 +115,9 @@ pub fn main() void {
 }
 ```
 
-```bash
+```bash:出力結果
 $ zig run sample.zig
-55 314159 -11 #出力結果
+55 314159 -11
 ```
 
 ## 配列
@@ -172,10 +172,10 @@ pub fn main() void {
 }
 ```
 
-```bash
+```bash:出力結果
 $ zig run sample.zig
 First: 1, Fourth: 3, Length: 8
-KOGA: 2012, WA: 202202202 #出力結果
+KOGA: 2012, WA: 202202202
 ```
 
 ## 文字列
@@ -214,7 +214,7 @@ pub fn main() void{
 }
 ```
 
-```bash
+```bash:出力結果
 $ zig run smaple.zig
 ./sample.zig:4:8 error: expected type 'bool', found 'comptime_int' #出力結果
 ```
@@ -262,7 +262,7 @@ pub fn main() void{
 
 ```
 
-```bash
+```bash:出力結果
 $ zig run sample.zig
 1 4 7
 1 4 7
@@ -295,13 +295,12 @@ pub fn main() void{
 }
 ```
 
-```bash
+```bash:出力結果
 $ zig run sample.zig
 k s s
 no0 is k
 no1 is s
 no2 is s
-#出力結果
 ```
 
 サンプルコード中の`std.debug.print`関数の{}の中に`u`と書いていますが、これは第二引数が UTF-8 の文字であることを表しています。もしこれをしない場合、文字コードが出力されます。（この場合は筆者の環境においては、`107 115 115`と出力されました。）
@@ -326,9 +325,9 @@ pub fn main() void{
 }
 ```
 
-```bash
+```bash:出力結果
 $ zig run sample.zig
-1100 800 500 #出力結果
+1100 800 500
 ```
 
 上のサンプルコードでは`score`関数を作成しました。関数は、`fn 関数名(引数) 戻り値の型{}`というようになります。`score`関数では、a と b の引数をとり、戻り値は`i32`型になっています。また、引数は`識別子:型`というようにかくことができ、ここでは a、b ともに`i32`型の変数になっていることがわかります。
