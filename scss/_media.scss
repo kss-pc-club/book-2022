@@ -96,7 +96,7 @@
   size: $page-width $page-height;
   margin-top: $page-margin-top;
   margin-bottom: $page-margin-bottom - 6mm;
-  // padding-top: 5mm;
+  padding-top: 3.5mm;
 
   @top-left-corner {
     @include page-top-style();
