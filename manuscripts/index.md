@@ -1,6 +1,6 @@
 <div class="front">
 
-# KSS PC BOOK 2022
+# KSS PC BOOK 2022 {.doc}
 
 </div>
 <div class="detail">
@@ -9,7 +9,7 @@
 
 <nav id="toc" role="doc-toc">
 
-# 目次
+# 目次 {.doc}
 
 - [はじめに](foreword.html)
 - [この部誌を支える技術](about-vivliostyle/index.html)

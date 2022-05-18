@@ -50,9 +50,9 @@ section {
 figure:not([class*='language-']) {
   counter-increment: fig;
   figcaption::before {
-    content: 'Fig. ' counter(fig) ': ';
+    content: 'Fig. ' counter(chapter) '.' counter(fig) ': ';
     :root:lang(ja) & {
-      content: '▲ 図' counter(fig) ': ';
+      content: '▲ 図 ' counter(chapter) '.' counter(fig) '：';
     }
   }
 }

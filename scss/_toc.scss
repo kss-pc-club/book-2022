@@ -49,4 +49,13 @@ nav[role='doc-toc'] {
       }
     }
   }
+  /*
+  li:not(:first-child) {
+    a {
+      ::before {
+        content: '第 ' target-counter(attr(href url), chapter) ' 章　';
+      }
+    }
+  }
+  */
 }
