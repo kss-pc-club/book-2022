@@ -12,6 +12,7 @@ module.exports = {
     "icpc-invitation/index.md",
     'hnm2022/index.md',
     'newtons-method/index.md',
+    'fe-ap/index.md',
     'keyboard/index.md',
     'eno1220/index.md',
     'an_introduction_to_archlinux/index.md',
