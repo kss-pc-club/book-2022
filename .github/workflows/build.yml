@@ -38,6 +38,11 @@ jobs:
         run: yarn build
       - name: Build-v
         run: yarn build-v
+      - name: Unite Cover
+        run: |
+          mkdir intermediate/
+          mv public/book-v.pdf intermediate/
+          gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=public/book-v.pdf assets/cover.pdf intermediate/book-v.pdf assets/back.pdf
       - name: Build Press-Ready
         run: yarn press-ready
       - name: Deploy
