@@ -43,6 +43,7 @@ Vim や Vscode 用拡張機能や LSP も存在するので、GitHub やそれ�
 ## Zig コマンド
 
 Zig コマンドのサブコマンドとして使用する形式になっています。
+
 **主なコマンドの一覧**
 
 - `zig run sample.zig` : sample.zig の実行ファイルを生成し、すぐに実行する
