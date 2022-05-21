@@ -16,6 +16,7 @@ module.exports = {
     'keyboard/index.md',
     'eno1220/index.md',
     'an_introduction_to_archlinux/index.md',
+    'comments.md',
     'colophon.md',
   ],
   output: [

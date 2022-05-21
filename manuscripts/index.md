@@ -8,7 +8,7 @@ title: 目次
 
 </div>
 <div class="detail">
-2021-05-xx 版　　KSS PC Club 発行
+2021-05-21 版　　KSS PC Club 発行
 </div>
 
 <nav id="toc" role="doc-toc">
@@ -24,5 +24,6 @@ title: 目次
 - [第 6 章 キーボードが欲しかったので自作してみた](keyboard/index.html)
 - [第 7 章 プログラミング言語 Zig の基本文法](eno1220/index.html)
 - [第 8 章 始めよう、Arch Linux](an_introduction_to_archlinux/index.html)
+- [執筆者コメント](comments.html)
 
 </nav>
