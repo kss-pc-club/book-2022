@@ -42,7 +42,7 @@ jobs:
         run: |
           mkdir intermediate/
           mv public/book-v.pdf intermediate/
-          gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=public/book-v.pdf assets/cover.pdf intermediate/book-v.pdf assets/back.pdf
+          gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sPAPERSIZE=jisb5 -dPDFFitPage -sOutputFile=public/book-v.pdf assets/cover.pdf intermediate/book-v.pdf assets/back.pdf
       - name: Build Press-Ready
         run: yarn press-ready
       - name: Deploy
